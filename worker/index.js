@@ -8,6 +8,8 @@ const redisClient = redis.createClient({
 });
 const sub = redisClient.duplicate();
 console.log('Worker is running');
+console.log(keys.redisHost);
+console.log(keys.redisPort);
 
 function fib(index) {
   if (index < 2) return 1;
