@@ -56,7 +56,8 @@ class Fib extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-      <label>Hola mi amor, esto es Fibonacci en K8s desplegado en Google</label><br>
+      <label>Hola mi amor, esto es Fibonacci en K8s desplegado en Google</label>
+      <br/>
           <input
             value={this.state.index}
             onChange={(event) => this.setState({ index: event.target.value })}
